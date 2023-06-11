@@ -1,10 +1,10 @@
-# dune build
+# dune utop
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: "/Users/yimkeul/Library/Mobile
 # Documents/com~apple~CloudDocs/\225\132\146\225\133\161\225\134\168\225\132\128\225\133\173/2023/\225\132\145\225\133\179\225\132\139\225\133\165\225\134\171\225\132\128\225\133\162/code/hw13"
 # Auto-detected concurrency: 8
-$ /opt/homebrew/bin/ocamlc.opt -config > /var/folders/5h/27xkt0756f75h67x8ysxgpq40000gn/T/dune_ffa8b7_output
+$ /opt/homebrew/bin/ocamlc.opt -config > /var/folders/5h/27xkt0756f75h67x8ysxgpq40000gn/T/dune_197c44_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -111,7 +111,16 @@ $ /opt/homebrew/bin/ocamlc.opt -config > /var/folders/5h/27xkt0756f75h67x8ysxgpq
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /opt/homebrew/bin/ocamldep.opt -modules -impl hw13.ml) > _build/default/.hw13.eobjs/dune__exe__Hw13.impl.d
-$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hw13.eobjs/byte -no-alias-deps -opaque -open Dune__exe -o .hw13.eobjs/byte/dune__exe__Hw13.cmo -c -impl hw13.ml)
-$ (cd _build/default && /opt/homebrew/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hw13.eobjs/byte -I .hw13.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .hw13.eobjs/native/dune__exe__Hw13.cmx -c -impl hw13.ml)
-$ (cd _build/default && /opt/homebrew/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hw13.exe .hw13.eobjs/native/dune__exe.cmx .hw13.eobjs/native/dune__exe__AddrManager.cmx .hw13.eobjs/native/dune__exe__Ast.cmx .hw13.eobjs/native/dune__exe__Env.cmx .hw13.eobjs/native/dune__exe__Value.cmx .hw13.eobjs/native/dune__exe__Memory.cmx .hw13.eobjs/native/dune__exe__Hw13.cmx)
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hw13.objs/byte -I .AddrManager.objs/byte -I .Ast.objs/byte -I .Env.objs/byte -I .Memory.objs/byte -I .ParserMain.objs/byte -I .Value.objs/byte -no-alias-deps -opaque -o .hw13.objs/byte/hw13.cmo -c -impl hw13.ml)
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o hw13.cma .hw13.objs/byte/hw13.cmo)
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I .utop/.utop.eobjs/byte -I /Users/yimkeul/.opam/default/lib/findlib -I /Users/yimkeul/.opam/default/lib/lambda-term -I /Users/yimkeul/.opam/default/lib/logs -I /Users/yimkeul/.opam/default/lib/lwt -I /Users/yimkeul/.opam/default/lib/lwt/unix -I /Users/yimkeul/.opam/default/lib/lwt_react -I /Users/yimkeul/.opam/default/lib/mew -I /Users/yimkeul/.opam/default/lib/mew_vi -I /Users/yimkeul/.opam/default/lib/ocplib-endian -I /Users/yimkeul/.opam/default/lib/ocplib-endian/bigstring -I /Users/yimkeul/.opam/default/lib/react -I /Users/yimkeul/.opam/default/lib/result -I /Users/yimkeul/.opam/default/lib/trie -I /Users/yimkeul/.opam/default/lib/uchar -I /Users/yimkeul/.opam/default/lib/utop -I /Users/yimkeul/.opam/default/lib/uucp -I /Users/yimkeul/.opam/default/lib/uuseg -I /Users/yimkeul/.opam/default/lib/uutf -I /Users/yimkeul/.opam/default/lib/zed -I /opt/homebrew/lib/ocaml/compiler-libs -I /opt/homebrew/lib/ocaml/threads -I .AddrManager.objs/byte -I .Ast.objs/byte -I .Env.objs/byte -I .Memory.objs/byte -I .ParserMain.objs/byte -I .Value.objs/byte -I .hw13.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.exe -output-complete-exe /opt/homebrew/lib/ocaml/compiler-libs/ocamlcommon.cma /opt/homebrew/lib/ocaml/compiler-libs/ocamlbytecomp.cma /opt/homebrew/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/yimkeul/.opam/default/lib/findlib/findlib.cma /Users/yimkeul/.opam/default/lib/findlib/findlib_top.cma /Users/yimkeul/.opam/default/lib/logs/logs.cma -I /opt/homebrew/lib/ocaml /Users/yimkeul/.opam/default/lib/lwt/lwt.cma /Users/yimkeul/.opam/default/lib/logs/logs_lwt.cma /opt/homebrew/lib/ocaml/unix.cma -I /opt/homebrew/lib/ocaml /opt/homebrew/lib/ocaml/bigarray.cma -I /opt/homebrew/lib/ocaml /Users/yimkeul/.opam/default/lib/ocplib-endian/ocplib_endian.cma /Users/yimkeul/.opam/default/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /opt/homebrew/lib/ocaml/threads/threads.cma -I /opt/homebrew/lib/ocaml /Users/yimkeul/.opam/default/lib/lwt/unix/lwt_unix.cma -I /Users/yimkeul/.opam/default/lib/lwt/unix /Users/yimkeul/.opam/default/lib/react/react.cma /Users/yimkeul/.opam/default/lib/lwt_react/lwt_react.cma /Users/yimkeul/.opam/default/lib/result/result.cma /Users/yimkeul/.opam/default/lib/uutf/uutf.cma /Users/yimkeul/.opam/default/lib/uucp/uucp.cma /Users/yimkeul/.opam/default/lib/uuseg/uuseg.cma /Users/yimkeul/.opam/default/lib/zed/zed.cma /Users/yimkeul/.opam/default/lib/trie/trie.cma /Users/yimkeul/.opam/default/lib/mew/mew.cma /Users/yimkeul/.opam/default/lib/mew_vi/mew_vi.cma /Users/yimkeul/.opam/default/lib/lambda-term/lambda_term.cma -I /Users/yimkeul/.opam/default/lib/lambda-term /Users/yimkeul/.opam/default/lib/utop/uTop.cma Ast.cma Value.cma Env.cma Memory.cma AddrManager.cma ParserMain.cma hw13.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
+> File "Env.cma(Env)", line 1:
+> Warning 31 [module-linked-twice]: files Env.cma(Env) and /opt/homebrew/lib/ocaml/compiler-libs/ocamlcommon.cma(Env) both define a module named Env
+> /var/folders/5h/27xkt0756f75h67x8ysxgpq40000gn/T/build_7426de_dune/camlobjd3ee72.c:369806:14: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+> extern value caml_get_public_method();
+>              ^
+> /var/folders/5h/27xkt0756f75h67x8ysxgpq40000gn/T/build_7426de_dune/camlobjd3ee72.c:369988:14: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+> extern value caml_set_oo_id();
+>              ^
+> 2 warnings generated.
