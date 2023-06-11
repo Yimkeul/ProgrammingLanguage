@@ -1,0 +1,29 @@
+(* let lex (input:string) : bool =
+  let rec lex' input state num_so_far =
+    match input, state with
+    | "", Q0 -> true
+    | "", _ -> raise Rejected
+    | c::cs, Q0 ->
+      begin
+        match c with
+        | '0' -> lex' cs Int 0
+        | '1'..'9' -> lex' cs Int (int_of_char c - int_of_char '0')
+        | _ -> raise Rejected
+      end
+    | c::cs, Int ->
+      begin
+        match c with
+        | '0'..'9' -> let new_num = num_so_far*10 + (int_of_char c - int_of_char '0') in
+                      if new_num < 0 then raise Rejected else lex' cs Int new_num
+        | '+' | '-' | '*' | '/' -> lex' cs Op 0
+        | _ -> raise Rejected
+      end
+    | c::cs, Op ->
+      begin
+        match c with
+        | '0' -> lex' cs Int 0
+        | '1'..'9' -> lex' cs Int (int_of_char c - int_of_char '0')
+        | _ -> raise Rejected
+      end
+  in
+  try lex' input Start 0 with Rejected -> false *)
